@@ -1,0 +1,71 @@
+Log file created and old log wiped
+RUN BASH COMMANDS...
+
+Current date and time: Thu Aug  1 08:15:26 PM PDT 2024\n
+
+Current directory: /home/student/user/CSCI_50_FINAL
+Listing files in directory:
+total 68
+-rwxrwxr-x 1 user user  6616 Aug  1 18:51 access_db.py
+-rwxrwxr-x 1 user user  2603 Jul 30 23:40 app.sh
+-rw-rw-r-- 1 user user  8906 Aug  1 19:59 Car_Models.csv
+-rw-r--r-- 1 user user 20480 Aug  1 19:59 car_repair.db
+-rwxrwxr-x 1 user user   721 Jul 30 22:44 create_db.sh
+-rwxrwxr-x 1 user user  1928 Jul 30 23:56 generate_html.pl
+drwxrwxr-x 2 user user  4096 Jul 30 21:40 Other
+-rw-rw-r-- 1 user user   730 Jul 30 23:44 README.md
+drwxrwxr-x 2 user user  4096 Aug  1 20:05 results
+-rwxrwxr-x 1 user user   610 Aug  1 18:51 search_with_awk.sh
+
+Displaying disk usage:
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           392M  1.9M  390M   1% /run
+/dev/sda         16G  7.9G  7.2G  53% /
+tmpfs           2.0G   28K  2.0G   1% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/sdd         32G   29G  2.6G  92% /home
+/dev/sdc         20G  2.7G   17G  14% /var
+tmpfs           392M  4.0K  392M   1% /run/user/5434
+tmpfs           392M  4.0K  392M   1% /run/user/5436
+tmpfs           392M  4.0K  392M   1% /run/user/1005
+tmpfs           392M  4.0K  392M   1% /run/user/5398
+tmpfs           392M  4.0K  392M   1% /run/user/5416
+tmpfs           392M  4.0K  392M   1% /run/user/5410
+tmpfs           392M  4.0K  392M   1% /run/user/5404
+tmpfs           392M  4.0K  392M   1% /run/user/5012
+tmpfs           392M  4.0K  392M   1% /run/user/5435
+tmpfs           392M  4.0K  392M   1% /run/user/5409
+tmpfs           392M  4.0K  392M   1% /run/user/2671
+tmpfs           392M  4.0K  392M   1% /run/user/5442
+Displaying memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       944Mi       160Mi        20Mi       2.7Gi       2.6Gi
+Swap:          2.0Gi        34Mi       2.0Gi
+Adding permissions to files...
+Removed the old database file
+Removed header line from CSV
+Displaying the first 5 lines of Car_Models.csv:
+Ford,Mustang,310-760 hp,350-625 lb-ft,6-speed manual/10-speed automatic,RWD,16-21 mpg city / 24-32 mpg highway,2015-2021,Gas V6/V8,5W-20,V6 (6.0 quarts (with filter)) V8(10.0 quarts (with filter)),"The low-pressure fuel supply line may be damaged or cut, which can result in a fuel leak."
+Ford,F-150,290-450 hp,265-510 lb-ft,6-speed automatic/10-speed automatic,RWD/4WD,16-20 mpg city / 22-26 mpg highway,2015-2021,Gas V6/V8,5W-20,V6 (6.0 quarts (with filter)) V8(8.8 quarts (with filter)),The SYNC software may fail to activate the electronic stability control (ESC) system at the beginning of each ignition cycle
+Ford,Explorer,300-400 hp,310-415 lb-ft,10-speed automatic,FWD/AWD,18-21 mpg city / 24-28 mpg highway,2015-2021,2.3L Ecoboost,5W-30,5.7 quarts (with filter) ,"Due to a poor electrical connection, the rearview camera may intermittently display a blank or distorted image"
+Ford,Escape,181-250 hp,190-280 lb-ft,8-speed automatic,FWD/AWD,23-26 mpg city / 31-34 mpg highway,2015-2021,1.5L Ecoboost,5W-20,5.4 quarts (with filter),A fuel injector may crack and leak fuel inside the engine compartment.
+Ford,Edge,250-335 hp,275-380 lb-ft,8-speed automatic,FWD/AWD,21-22 mpg city / 28-29 mpg highway,2015-2021,2.3L Ecoboost,5W-20,5.7 quarts (with filter) ,�The bushing that attaches the shifter cable to the transmission may degrade or detach.
+# LINES in Car_Models.csv: 42
+
+Word count of Car_Models.csv:
+979 Car_Models.csv
+
+Search 'Ford' in Car_Models.csv:
+Ford,Mustang,310-760 hp,350-625 lb-ft,6-speed manual/10-speed automatic,RWD,16-21 mpg city / 24-32 mpg highway,2015-2021,Gas V6/V8,5W-20,V6 (6.0 quarts (with filter)) V8(10.0 quarts (with filter)),"The low-pressure fuel supply line may be damaged or cut, which can result in a fuel leak."
+Ford,F-150,290-450 hp,265-510 lb-ft,6-speed automatic/10-speed automatic,RWD/4WD,16-20 mpg city / 22-26 mpg highway,2015-2021,Gas V6/V8,5W-20,V6 (6.0 quarts (with filter)) V8(8.8 quarts (with filter)),The SYNC software may fail to activate the electronic stability control (ESC) system at the beginning of each ignition cycle
+Ford,Explorer,300-400 hp,310-415 lb-ft,10-speed automatic,FWD/AWD,18-21 mpg city / 24-28 mpg highway,2015-2021,2.3L Ecoboost,5W-30,5.7 quarts (with filter) ,"Due to a poor electrical connection, the rearview camera may intermittently display a blank or distorted image"
+Ford,Escape,181-250 hp,190-280 lb-ft,8-speed automatic,FWD/AWD,23-26 mpg city / 31-34 mpg highway,2015-2021,1.5L Ecoboost,5W-20,5.4 quarts (with filter),A fuel injector may crack and leak fuel inside the engine compartment.
+Ford,Edge,250-335 hp,275-380 lb-ft,8-speed automatic,FWD/AWD,21-22 mpg city / 28-29 mpg highway,2015-2021,2.3L Ecoboost,5W-20,5.7 quarts (with filter) ,�The bushing that attaches the shifter cable to the transmission may degrade or detach.
+Ford,Ranger,270 hp,310 lb-ft,10-speed automatic,RWD/4WD,21-23 mpg city / 26-26 mpg highway,2019-2021,2.3L Ecoboost,5W-30,5.7 quarts (with filter) ,"On certain sport utility vehicles with steel hoods and certain pickup trucks equipped with sheet molding compound hoods, a wire-formed hood striker could be susceptible to fatigue fractures"
+Ford,Bronco Sport,181-245 hp,190-275 lb-ft,8-speed automatic,4WD,23-25 mpg city / 28-32 mpg highway,2021,2.3L Ecoboost,5W-30,5.7 quarts (with filter) ,"�The left-side rear door may be opened from the inside of the vehicle when the child safety lock is in the ""ON"" position."
+
+Uptime:
+ 20:15:26 up 163 days,  9:57, 10 users,  load average: 0.13, 0.04, 0.01
+
+RUN create_db.sh to set up the database...
+Running access_db.py to start the application...

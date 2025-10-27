@@ -1,0 +1,51 @@
+## FOR REFERENCE FOR CERTAIN FUNCTIONS
+#! /usr/bin/python3
+
+# Inserting data interactively using a function
+
+import sqlite3
+connection = sqlite3.connect("myDynamicData.db")
+c = connection.cursor()
+
+
+def create_table():
+    c.execute ("""CREATE TABLE IF NOT EXISTS course(
+                lastname VARCHAR (15),
+                gpa REAL,
+                classlevel VARCHAR(10));""")
+    connection.commit()
+
+def enter_data():
+    c.execute("""INSERT INTO course VALUES('John', 2.7, 'senior')""")
+    c.execute("""INSERT INTO course VALUES('James', 3.4, 'freshman')""")
+    connection.commit()
+
+def enter_dynamic_data():
+    name=input("What is your name? ")
+    grade=float(input("What is your current GPA? "))
+    level=input("What is your current class level? ")
+
+    c.execute("""INSERT INTO course (lastname, gpa, classlevel)
+    VALUES (?,?,?)""",(name, grade, level))
+    connection.commit()
+
+create_table()
+
+# Displaying data entered in interactively
+def display_dynamic_data():
+    sql = """SELECT * FROM course"""
+    for row in connection.execute(sql):
+        print(row)
+
+def read_dynamic_data_filter():
+    name = input ("What name do you want to search for? ")
+    level = input ("What class level do you want to search for? ")
+    sql2 = """SELECT * FROM course WHERE lastname = ? AND classlevel = ?"""
+
+    for row in connection.execute (sql2, [(name), (level)]):
+        print (row)
+
+enter_dynamic_data()
+display_dynamic_data()
+read_dynamic_data_filter()
+connection.close()
